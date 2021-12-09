@@ -1,38 +1,82 @@
-.App {
+* {
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
+
+.main-holder {
+  border: 5px solid black;
+  padding: 10px 0;
+  font-size: 10px;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+}
+.square {
+  width: 100px;
+  height: 130px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.squareNone{
+  height: 170px;
+  width: 130px;
+  border: 1px solid white;
+  margin: 10px;
+}
+.basicData {
+  font-size: 12px;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.dateEndreg{
+  width: 100%;
+}
+table.marks-table,
+table.marks-table tr,
+table.marks-table td,
+table.marks-table th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.marks-table {
+  text-align: center;
+  width: 100%;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 8px;
+}
+.tbl-sing {
+  width: 100%;
+  margin-top: 100px  ;
+}
+.tbl-sing td {
+  padding: 0 10px;
+}
+
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+.center{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media print { 
+  .printBtn  { display: none;}
+  .printme  { display: block;}
 }
